@@ -17,9 +17,13 @@ int* filaConMayorSuma(int arr[][3], int p) {
 }
 
 int main() {
-    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    int arr[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
     int* filaMax = filaConMayorSuma(arr, 3);
-    
+
     printf("Fila con mayor suma: ");
     for (int i = 0; i < 3; i++) {
         printf("%d ", filaMax[i]);
