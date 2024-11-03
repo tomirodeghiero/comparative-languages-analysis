@@ -1,8 +1,8 @@
-public class GarbageCollectorExample {
+public class GarbageCollector07 {
 
   private static int objectCount = 0;
 
-  public GarbageCollectorExample() {
+  public GarbageCollector07() {
     objectCount++;
   }
 
@@ -18,7 +18,7 @@ public class GarbageCollectorExample {
   public static void main(String[] args) {
     try {
       while (true) {
-        new GarbageCollectorExample();
+        new GarbageCollector07();
         System.gc();
         System.runFinalization();
       }
